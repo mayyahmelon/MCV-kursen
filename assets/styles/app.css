@@ -1,3 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: skyblue;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+h1 {
+    border-bottom: 4px double #4e1a1a;
 }
