@@ -6,7 +6,12 @@
  * which should already be in your base.html.twig.
  */
 
+import './styles/about.css';
 import './styles/app.css';
+import './styles/home.css';
+import './styles/report.css';
+
+
 import hello from './js/hello.js';
 
 console.log(hello())

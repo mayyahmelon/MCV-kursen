@@ -1,0 +1,18 @@
+/* CSS for Home-Page */
+
+.home-page {
+    display: flex;
+}
+
+.home-text,
+.home-image {
+    flex: 50%;
+}
+
+.home-image {
+    text-align: center;
+
+    img {
+        width: 50%;
+    }
+}

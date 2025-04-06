@@ -13,8 +13,14 @@
             {% block importmap %}{{ importmap('app') }}{% endblock %}
         {% endblock %}
     </head>
+
     <body>
-        <nav>
+
+        <header class="site-header" style="background-image: url({{ asset('img/moomin-header.jpg') }})">
+            <h1 class="site-title">Sumaiyyah's MVC</h1>
+        </header>
+
+        <nav class="navbar">
             <ul>
                 <li><a href="{{ path('home') }}">Home</a></li>
                 <li><a href="{{ path('about') }}">About</a></li>
@@ -22,6 +28,15 @@
                 <li><a href="{{ path('report') }}">Report</a></li>
             </ul>
         </nav>
-        {% block body %}{% endblock %}
+
+        {% block body %}
+        
+        {% endblock %}
+
+        <footer>
+            <div>
+                <h1>test</h1>
+            </div>
+        </footer>
     </body>
 </html>
