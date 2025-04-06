@@ -99,8 +99,8 @@ footer {
     }
 
     p {
-        margin-left: 1rem;
-        margin-bottom: 1rem;
+        margin-left: 0.5rem;
+        margin-bottom: 0.5rem;
     }
 }
 
@@ -115,8 +115,8 @@ footer {
     }
 
     a {
-        margin-left: 1rem;
-        margin-bottom: 1rem;
+        margin-left: 0.5rem;
+        margin-bottom: 0.5rem;
     }
 
     a:visited {
