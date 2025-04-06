@@ -8,6 +8,10 @@ body {
     margin: 0 auto;
 }
 
+main {
+    min-height: 50vh;
+}
+
 img {
     max-width: 600px;
     height: auto;

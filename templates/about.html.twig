@@ -4,6 +4,30 @@
 
 {% block body %}
 
-<h1>Aboutism</h1>
+<main class="about-page">
+    <h1 class="about-title">About the course</h1>
+    <div class="about-columns">
+        <div class="about-text">
+            <h2> About MVC </h2>
+            <p>MVC, or object oriented web technologies, is a course part of the web programming course that the Blekinge Tekniska Högskola
+                provides. In this course we will be learning about web programming using syntax, database connections, the built-in functions and more.
+                We will also be working with SQL and connecting to the databses using PDO,  PHP Data Objects.
+                You can read more about it in one of the links I've provided.
+            </p>
+        </div>
+
+        <div class="about-links">
+            <h2>Useful links</h2>
+            <ul>
+                <li><a href="https://dbwebb.se/kurser/mvc-v2">Dbwebb MVC</a></li>
+                <li><a href="https://github.com/dbwebb-se/mvc/">Dbwebb MVC Github</a></li>
+                <li><a href="https://github.com/mayyahmelon/MCV-kursen">This website's Github</a></li>
+            </ul>
+
+            <img src="{{ asset('img/moomin-studying.jpg') }}" alt="moomin studying">
+        </div>
+    </div>
+
+</main>
 
 {% endblock %}
