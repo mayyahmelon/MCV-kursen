@@ -17,11 +17,14 @@ img {
     height: auto;
 }
 
-h1 {
+h1,
+h2,
+h3 {
     font-family: "Roboto Slab", serif;
 }
 
-p {
+p,
+a {
     font-family: "Fira Sans", sans-serif;
 }
 
@@ -77,5 +80,57 @@ p {
 }
 
 footer {
-    background-color: saddlebrown;
+    background-color: #385e6d;
+    color: #f2f8fa;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 0.4fr;
+}
+
+.footer-left {
+    display: flex;
+    grid-column: 1 / 2;
+    flex-direction: column;
+
+    h3 {
+        border-bottom: 1px solid white;
+        margin: 1rem;
+    }
+
+    p {
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.footer-right {
+    display: flex;
+    grid-column: 3 / span 4;
+    flex-direction: column;
+
+    h3 {
+        border-bottom: 1px solid white;
+        margin: 1rem;
+    }
+
+    a {
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    a:visited {
+        color: white;
+    }
+
+    a:hover {
+        color: #bacfd8;
+    }
+}
+
+.footer-bottom {
+    grid-column: 1 / span 4;
+    grid-row: 3 / 3;
+
+    background-size: contain;
 }
