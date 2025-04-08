@@ -9,6 +9,7 @@
 import './styles/about.css';
 import './styles/app.css';
 import './styles/home.css';
+import './styles/lucky.css';
 import './styles/report.css';
 
 

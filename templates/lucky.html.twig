@@ -1,0 +1,39 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Magic number{% endblock %}
+
+{% block body %}
+<main class="lucky-page">
+    <h1>Lucky predictions</h1>
+    <p>
+        Welcome! The tarot card displayed is part of the 22 Major Arcana. 
+        The card is going to predict actions, events or feelings that may unfold around the time.
+        Do also look at the image for symbolism.
+    </p>
+
+    <div class="prediction_div">
+        <div class="lucky_time">
+            <h2 class="lucky_h2">Time of event</h2>
+            <p>{{ hour }}:{{ minute }} {{ noon }}</p>
+        </div>
+            <img class="tarot {{card_position}}" src={{ asset(tarot) }} alt="{{ alt_text }}">
+    </div>
+
+    <div class="keywords_div">
+        <h2 class="lucky_h2">{{ card_title }}</h2>
+        <h3>Upright</h3>
+        <h4> {{ info_upright }} </h4>
+        <h3>Reverse</h3>
+        <h4> {{ info_reverse }} </h4>
+    </div>
+
+    <div class="info">
+        <p>Images are from <a href="https://en.wikipedia.org/wiki/Rider–Waite_Tarot#Major_Arcana">wikipedia</a></p>
+        <p>For more information about the card you got, please visit
+            <a href="https://biddytarot.com/tarot-card-meanings/major-arcana/">Biddy Tarot</a></p>
+    
+    </div>
+
+</main>
+
+{% endblock %}

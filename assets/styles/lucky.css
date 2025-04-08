@@ -1,0 +1,92 @@
+/* CSS for lucky-page */
+.lucky-page {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 0.6fr 1fr 1fr;
+    grid-template-rows: 50px 50px 450px auto;
+    grid-template-areas:
+        "header header header header header"
+        "welcome welcome welcome welcome welcome"
+        "prediction prediction prediction keywords keywords"
+        "info info info info info";
+
+    h1 {
+        grid-area: header;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    p {
+        grid-area: welcome;
+        text-align: center;
+    }
+}
+
+.prediction_div {
+    grid-area: prediction;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.keywords_div {
+    grid-area: keywords;
+    margin: 0 auto;
+
+    border-left: 2px solid #385e6d;
+    padding: 0px 7rem;
+}
+
+.keywords_div h3,
+.keywords_div h4 {
+    font-family: "Barlow", sans-serif;
+}
+
+.keywords_div h3 {
+    font-weight: bold;
+    padding-bottom: 0.5rem;
+}
+
+.keywords_div h4 {
+    font-weight: 400;
+    padding-bottom: 1rem;
+}
+
+.lucky_time {
+    margin: 0 auto;
+
+    p {
+        font-family: "Rubik Distressed", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 3em;
+        color: #d00404;
+    }
+}
+
+.lucky_h2 {
+    font-family: "Sancreek", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4em;
+
+    border-bottom: #385e6d solid 1px;
+    margin-bottom: 1rem;
+}
+
+.info {
+    grid-area: info;
+
+    p {
+        font-size: 0.6em;
+    }
+}
+
+.downright {
+    transform: rotate(180deg);
+}
+
+.tarot {
+    max-width: 60%;
+    min-width: 20%;
+}
