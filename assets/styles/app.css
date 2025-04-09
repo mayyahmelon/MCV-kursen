@@ -9,7 +9,7 @@ body {
 }
 
 main {
-    min-height: 50vh;
+    min-height: 60vh;
 }
 
 img {
@@ -133,4 +133,28 @@ footer {
     grid-row: 3 / 3;
 
     background-size: contain;
+}
+
+.api-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        margin-bottom: 1rem;
+        border-bottom: 1px solid #385e6d;
+        width: 100%;
+        text-align: center;
+        padding: 0.3rem;
+    }
+}
+
+.api-links h2 {
+    padding-bottom: 0.4rem;
+    text-align: center;
+}
+
+.api-links ol {
+    text-align: center;
+    list-style-type: decimal;
 }

@@ -1,6 +1,6 @@
 /* CSS for about-page */
 .about-page {
-    height: 70vh;
+    max-height: 70vh;
 }
 
 .about-title {

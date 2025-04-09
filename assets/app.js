@@ -15,4 +15,4 @@ import './styles/report.css';
 
 import hello from './js/hello.js';
 
-console.log(hello())
+hello()

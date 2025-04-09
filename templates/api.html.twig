@@ -1,9 +1,17 @@
 {% extends "base.html.twig" %}
 
-{% block title %}Home{% endblock %}
+{% block title %}List of APIs{% endblock %}
 
 {% block body %}
-    <main>
-        <p><a href="{{ path('quote') }}">Api/quote</a></p>
+    <main class="api-page">
+        <h1>API</h1>
+            <div class="api-links">
+                <h2>Links</h2>
+                <ol>
+                    <li><a href="{{ path('quote') }}">Api/quote</a></li>
+                </ol>
+            </div>
+        </div>
     </main>
+
 {% endblock %}
