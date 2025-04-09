@@ -1,13 +1,47 @@
-# MCV-kursen
+# DBWEBB MCV
 
-# Show the routes
-bin/console debug:router
+![Website Header](public/img/moomin-header.jpg)
 
-# Match a specific route
-bin/console router:match /lucky/number
+---
+Description
+---
+This is a website made for the MCV course at Blekinge Tekniska Högskola.
+The website is composed by Symfony, Twig, and Encore.
 
-# Clear the cache
-bin/console cache:clear
+---
+Links
+---
+This git's website:
+* https://www.student.bth.se/~susu24/dbwebb-kurser/mvc/me/report/public/
 
-# Show available commands
-bin/console
+Course website:
+* https://dbwebb.se/mvc
+
+---
+Instructions
+---
+You need PHP installed in the terminal, Composer and The PHP package manager.
+Check if you have these installed.
+
+```
+$ php --version
+```
+
+```
+$ composer --version
+```
+
+```
+$ make --version
+```
+
+Clone the repositry
+```
+git clone git@github.com:mayyahmelon/MCV-kursen.git
+```
+
+The command to open the PHP web-server.
+* http://localhost:8888
+```
+php -S localhost:8888 -t public
+```
